@@ -1,0 +1,91 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyONE83lUCe3qK+eRuQ+P9Yz",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/marcarisma/Q2_Assessments/blob/main/FA1_Mahogany_Carisma\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 13,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TmTHctDMAeQZ",
+        "outputId": "48dee4a7-7668-4cdc-fb7a-ee6f6986f43f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter the first number 18\n",
+            "enter the second number 67\n",
+            "please choose an operation(no capital letters) divide\n",
+            "0.26865671641791045\n"
+          ]
+        }
+      ],
+      "source": [
+        "num_1 = int(input(\"enter the first number \"))\n",
+        "num_2 = int(input(\"enter the second number \"))\n",
+        "operation = (input(\"please choose an operation(no capital letters) \"))\n",
+        "\n",
+        "def add_numbers():\n",
+        "    add = num_1 + num_2\n",
+        "    return add\n",
+        "\n",
+        "def subtract_numbers():\n",
+        "    subtract = num_1 - num_2\n",
+        "    return subtract\n",
+        "\n",
+        "def multiply_numbers():\n",
+        "    multiply = num_1 * num_2\n",
+        "    return multiply\n",
+        "\n",
+        "def divide_numbers():\n",
+        "    divide = num_1 / num_2\n",
+        "    return divide\n",
+        "\n",
+        "if operation == \"addition\":\n",
+        "    answer = add_numbers()\n",
+        "    print(answer)\n",
+        "\n",
+        "elif operation == \"subtract\":\n",
+        "    answer = subtract_numbers()\n",
+        "    print(answer)\n",
+        "\n",
+        "elif operation == \"multiply\":\n",
+        "    answer = multiply_numbers()\n",
+        "    print(answer)\n",
+        "\n",
+        "elif operation == \"divide\":\n",
+        "    answer = divide_numbers()\n",
+        "    print(answer)\n",
+        "\n"
+      ]
+    }
+  ]
+}
