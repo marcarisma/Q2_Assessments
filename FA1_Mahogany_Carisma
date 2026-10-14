@@ -1,149 +1,95 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyP/1vlpl097ZCPFW3grAyJ8",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/marcarisma/Q2_Assessments/blob/main/FA1_Mahogany_Carisma\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "execution_count": null,
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "TmTHctDMAeQZ",
-        "outputId": "ff65e681-e9bb-46e8-967e-de1b157c3f21"
-      },
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "Enter the first number: 10\n",
-            "Enter the second number: 4\n",
-            "Please choose an operation (addition, subtract, multiply, divide): multiply\n",
-            "The product is 40\n"
-          ]
-        }
-      ],
-      "source": [
-        "4# Version 1\n",
-        "#num_1 = int(input(\"enter the first number \"))\n",
-        "#num_2 = int(input(\"enter the second number \"))\n",
-        "#operation = (input(\"please choose an operation(no capital letters) \"))\n",
-        "\n",
-        "#def add_numbers():\n",
-        "    #add = num_1 + num_2\n",
-        "    #return add\n",
-        "\n",
-        "#def subtract_numbers():\n",
-        "    #subtract = num_1 - num_2\n",
-        "    #return subtract\n",
-        "\n",
-        "#def multiply_numbers():\n",
-        "    #multiply = num_1 * num_2\n",
-        "    #return multiply\n",
-        "\n",
-        "#def divide_numbers(num_1, num_2):\n",
-        "    #if num_2 == 0:\n",
-        "        #print(\"Cannot divide by zero\")\n",
-        "        #return None\n",
-        "\n",
-        "    #divide = num_1 / num_2\n",
-        "    #return divide\n",
-        "\n",
-        "#if operation == \"addition\":\n",
-        "    #answer = add_numbers()\n",
-        "    #print(answer)\n",
-        "\n",
-        "#elif operation == \"subtract\":\n",
-        "    #answer = subtract_numbers()\n",
-        "    #print(answer)\n",
-        "\n",
-        "#elif operation == \"multiply\":\n",
-        "    #answer = multiply_numbers()\n",
-        "    #print(answer)\n",
-        "\n",
-        "#elif operation == \"divide\":\n",
-        "    #answer = divide_numbers(num_1, num_2)\n",
-        "    #print(answer)\n",
-        "\n",
-        "\n",
-        "#:Version 2\n",
-        "\n",
-        "num_1 = int(input(\"Enter the first number: \"))\n",
-        "num_2 = int(input(\"Enter the second number: \"))\n",
-        "operation = input(\"Please choose an operation (addition, subtract, multiply, divide): \").lower()\n",
-        "\n",
-        "\n",
-        "def add_numbers():\n",
-        "  return num_1 + num_2\n",
-        "\n",
-        "\n",
-        "def subtract_numbers():\n",
-        "  return num_1 - num_2\n",
-        "\n",
-        "\n",
-        "def multiply_numbers():\n",
-        "  return num_1 * num_2\n",
-        "\n",
-        "\n",
-        "def divide_numbers():\n",
-        "  if num_2 == 0:\n",
-        "    print(\"Cannot divide by zero\")\n",
-        "    return None\n",
-        "  return num_1 / num_2\n",
-        "\n",
-        "\n",
-        "if operation == \"addition\" or operation == \"add\":\n",
-        "  answer = add_numbers()\n",
-        "  print(\"The sum is\", answer)\n",
-        "\n",
-        "elif operation == \"subtract\" or operation == \"subtraction\":\n",
-        "  answer = subtract_numbers()\n",
-        "  print(\"The difference is\", answer)\n",
-        "\n",
-        "elif operation == \"multiply\" or multiply\" or operation == \"multiplication\":\n",
-        "  answer = multiply_numbers()\n",
-        "  print(\"The product is\", answer)\n",
-        "\n",
-        "elif operation == \"divide\" or operation == \"division\":\n",
-        "  answer = divide_numbers()\n",
-        "  print(\"The quotient is\", answer)\n",
-        "\n",
-        "else:\n",
-        "  print(\"Invalid operation chosen.\")\n",
-        "\n",
-        "\n",
-        "#Reflection\n",
-        "#1.The functions I made are able to add, subtract, multiply, and divide.\n",
-        "#2.I didn't use any parameters, instead I use global variables.\n",
-        "#3.There is no arguments passed as I use global variables\n",
-        "#4.The program uses the return value by capturing it inside a variable named answer, and then passing that variable to the print() statement.\n",
-        "#5.Dividing your calculator program into functions is better because it organizes your code into a modular, reusable, and easy-to-debug structure."
-      ]
-    }
-  ]
-}
+# Version 1
+#num_1 = int(input("enter the first number "))
+#num_2 = int(input("enter the second number "))
+#operation = (input("please choose an operation(no capital letters) "))
+
+#def add_numbers():
+    #add = num_1 + num_2
+    #return add
+
+#def subtract_numbers():
+    #subtract = num_1 - num_2
+    #return subtract
+
+#def multiply_numbers():
+    #multiply = num_1 * num_2
+    #return multiply
+
+#def divide_numbers(num_1, num_2):
+    #if num_2 == 0:
+        #print("Cannot divide by zero")
+        #return None
+
+    #divide = num_1 / num_2
+    #return divide
+
+#if operation == "addition":
+    #answer = add_numbers()
+    #print(answer)
+
+#elif operation == "subtract":
+    #answer = subtract_numbers()
+    #print(answer)
+
+#elif operation == "multiply":
+    #answer = multiply_numbers()
+    #print(answer)
+
+#elif operation == "divide":
+    #answer = divide_numbers(num_1, num_2)
+    #print(answer)
+
+
+#:Version 2
+
+num_1 = int(input("Enter the first number: "))
+num_2 = int(input("Enter the second number: "))
+operation = input("Please choose an operation (addition, subtract, multiply, divide): ").lower()
+
+
+def add_numbers():
+  return num_1 + num_2
+
+
+def subtract_numbers():
+  return num_1 - num_2
+
+
+def multiply_numbers():
+  return num_1 * num_2
+
+
+def divide_numbers():
+  if num_2 == 0:
+    print("Cannot divide by zero")
+    return None
+  return num_1 / num_2
+
+
+if operation == "addition" or operation == "add":
+  answer = add_numbers()
+  print("The sum is", answer)
+
+elif operation == "subtract" or operation == "subtraction":
+  answer = subtract_numbers()
+  print("The difference is", answer)
+
+elif operation == "multiply" or multiply" or operation == "multiplication":
+  answer = multiply_numbers()
+  print("The product is", answer)
+
+elif operation == "divide" or operation == "division":
+  answer = divide_numbers()
+  print("The quotient is", answer)
+
+else:
+  print("Invalid operation chosen.")
+
+
+#Reflection
+#1.The functions I made are able to add, subtract, multiply, and divide.
+#2.I didn't use any parameters, instead I use global variables.
+#3.There is no arguments passed as I use global variables
+#4.The program uses the return value by capturing it inside a variable named answer, and then passing that variable to the print() statement.
+#5.Dividing your calculator program into functions is better because it organizes your code into a modular, 
+  
