@@ -1,47 +1,51 @@
 
 
 #:Version 2
-
+#Asks the user for two numbers to calculate
 num_1 = int(input("Enter the first number: "))
 num_2 = int(input("Enter the second number: "))
 operation = input("Please choose an operation (addition, subtract, multiply, divide): ").lower()
 
-
+#The function for addition
 def add_numbers():
   return num_1 + num_2
 
-
+#The function for subtraction
 def subtract_numbers():
   return num_1 - num_2
 
-
+#The function for multiplication
 def multiply_numbers():
   return num_1 * num_2
 
-
+#The function for division.It also checks if the second number is zero
 def divide_numbers():
   if num_2 == 0:
     print("Cannot divide by zero")
     return None
   return num_1 / num_2
 
-
+#Condidtional function for addition
 if operation == "addition" or operation == "add":
   answer = add_numbers()
   print("The sum is", answer)
 
+#Condition function for subtraction
 elif operation == "subtract" or operation == "subtraction":
   answer = subtract_numbers()
   print("The difference is", answer)
 
+#Conditional function for multiplication
 elif operation == "multiply" or multiply" or operation == "multiplication":
   answer = multiply_numbers()
   print("The product is", answer)
 
+#Conditional function for division
 elif operation == "divide" or operation == "division":
   answer = divide_numbers()
   print("The quotient is", answer)
 
+#If the user picked an operation worng or didn't picked one at all
 else:
   print("Invalid operation chosen.")
 
